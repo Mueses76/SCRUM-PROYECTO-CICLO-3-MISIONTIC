@@ -1,0 +1,55 @@
+
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-10{
+	flex: 10%;
+}
+
+.flex-80{
+    flex: 80%;
+}
+.flex-80-1{
+	flex: 0.1%;
+}
+.flex-80-49l, .flex-80-49r{
+    flex: 49%;
+	position: relative;
+}
+.flex-80-32l, .flex-80-32r, .flex-80-32c{
+    flex: 32%;
+	position: relative;
+}
+.fecha{
+	top: 50%;
+	transform: translateY(15%);
+}
+@media(max-width:1190px){
+	.flex-80-32l{
+		flex: 99.9%;
+	}
+	.flex-80-32c, .flex-80-32r{
+		margin-top: 10px;
+		flex:49%;
+	}
+
+}
+@media(max-width:785px){
+	.flex-80-32l{
+		flex: 99.9%;
+	}
+	.flex-80-32c, .flex-80-32r{
+		margin-top: 10px;
+		flex:99.9%;
+	}
+	.flex-80-49r{
+		margin-top: 10px;
+		flex: 99.9%;	
+	}
+	.flex-80-49l{
+		flex: 99.9%;	
+	}
+
+}
