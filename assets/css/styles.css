@@ -10,9 +10,14 @@
 	flex: 10%;
 }
 .flex-85{
+	flex: 10%;
+}
+.flex-70{
 	flex: 70%;
 }
-
+.flex-60{
+	flex: 60%;
+}
 .flex-80{
     flex: 80%;
 }
@@ -26,6 +31,9 @@
 .flex-80-32l, .flex-80-32r, .flex-80-32c{
     flex: 32%;
 	position: relative;
+}
+.flex-100{
+	flex: 100%;
 }
 .fecha{
 	top: 50%;
