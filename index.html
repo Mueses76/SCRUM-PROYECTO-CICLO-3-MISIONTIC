@@ -29,14 +29,20 @@
             <a role="button" href="registerBase.html" class="btn btn-primary" type="button" style="font-family: Consolas;background: #6F42C1;">Sign up</a>
         </div>
     </nav>
-    <h1 class="display-3 text-center" style="font-family: Consolas;font-size: 51.8px;">Bienvenido a CourseSearch</h1>
+    <h1 class="display-3 text-center" style="font-family: Consolas;font-size: 51.8px; margin: 50px 0px 0px 0px
+;">Bienvenido a CourseSearch</h1>
     <p style="text-align: center;font-family: Consolas;margin: 0px 0px 0px 0px;">Plataforma para la búsqueda de contenido educativo gratuito de programación</p>
     <p style="text-align: center;font-family: Consolas;">en internet</p>
     
     <div class="flex-container">
         <div class="flex-10"></div>
-        <div class="flex-80" style="margin: 0px 0px 10px 0px;">
-            <div class="col-md-12" style="background: var(--bs-indigo);border-width: 2px;border-color: var(--bs-blue);"><label class="col-form-label">&nbsp;<i class="fa fa-search" style="background: var(--bs-indigo);border-color: var(--bs-purple);color: var(--bs-gray-900);margin: 0px 10px 0px 0px;"></i></label></div>
+        <div class="flex-80 " style="margin: 30px 0px 10px 0px;">
+            <div class="flex-container">
+                <label class="col-form-label">&nbsp;<i class="fa fa-search" style="margin: 0px 10px 0px 10px;"></i>
+                </label>
+                <input class="form-control flex-85" type="text" placeholder="Buscar Curso" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+
+            </div>
         </div>
         <div class="flex-10"></div>
     </div>
@@ -44,31 +50,45 @@
     <div class="flex-container">
         <div class="flex-10"></div>
         <div class="flex-80 flex-container" style="margin: 0px 0px 10px 0px;">
-            <div class="flex-80-49l" style="background: var(--bs-indigo);"><label class="col-form-label" style="font-family: Consolas;">Titulo:&nbsp;</label></div>
+            <div class="flex-80-49l flex-container" ">
+                <label class="col-form-label" style="font-family: Consolas;">Titulo:&nbsp;</label>
+                <input class="form-control flex-85" type="text" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+
+            </div>
             <div class="flex-80-1"> </div>
-            <div class="flex-80-49r" style="background: var(--bs-indigo);"><label class="col-form-label" style="font-family: Consolas;">Autor original:&nbsp;</label></div>
+            <div class="flex-80-49r flex-container">
+                <label class="col-form-label" style="font-family: Consolas;">Autor original:&nbsp;</label>
+                <input class="form-control flex-85" type="text" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+
+            </div>
         </div>
         <div class="flex-10"></div>
     </div>
     <div class="flex-container">
         <div class="flex-10"></div>
         <div class="flex-80 flex-container" style="margin: 0px 0px 10px 0px;">
-            <div class="flex-80-32l" style="background: var(--bs-indigo)"><label class="col-form-label" style="font-family: Consolas;">Plataforma:&nbsp;</label></div>
+            <div class="flex-80-32l flex-container">
+                <label class="col-form-label" style="font-family: Consolas;">Plataforma:&nbsp;</label>
+                <input class="form-control flex-85" type="text" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+
+            </div>
             <div class="flex-80-1"> </div>
-            <div class="flex-80-32c" style="background: var(--bs-indigo);">
+            <div class="flex-80-32c flex-container">
+                <div class="col fecha" style="text-align: left;">
+                    <p style="font-family: Consolas">Fecha inicio:</p>
+                </div>
                 <div class="row">
-                    <div class="col fecha" style="text-align: left;">
-                        <p style="font-family: Consolas">Fecha inicio:</p>
-                    </div>
+                    
                     <div class="col fecha"><input type="date" ></div>
                 </div>
             </div>
             <div class="flex-80-1"> </div>
-            <div class="flex-80-32r" style="background: var(--bs-indigo)">
+            <div class="flex-80-32r flex-container">
+                <div class="col fecha" style="text-align: left;">
+                    <p style="font-family: Consolas;">Fecha fin:</p>
+                </div>
                 <div class="row">
-                    <div class="col fecha" style="text-align: left;">
-                        <p style="font-family: Consolas;">Fecha fin:</p>
-                    </div>
+                    
                     <div class="col fecha"><input type="date"></div>
                 </div>
             </div>
@@ -77,7 +97,7 @@
         <div class="flex-10"></div>
     </div>
 
-    <footer class="footer-dark" style="margin: 20px 0px 0px 0px;padding-bottom: 0px;">
+    <footer class="footer-dark" style="margin: 100px 0px 0px 0px">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-3 item">

@@ -3,9 +3,14 @@
 	display: flex;
 	flex-wrap: wrap;
 }
-
+.flex-5{
+	flex: 5%;
+}
 .flex-10{
 	flex: 10%;
+}
+.flex-85{
+	flex: 70%;
 }
 
 .flex-80{
