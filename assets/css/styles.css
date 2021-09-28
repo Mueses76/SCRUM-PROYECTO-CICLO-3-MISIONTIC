@@ -3,35 +3,61 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+.flex-container-p{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px 20px 0px 20px;
+}
+
 .flex-5{
 	flex: 5%;
 }
+
 .flex-10{
 	flex: 10%;
 }
-.flex-85{
-	flex: 10%;
+
+.flex-15{
+	flex: 15%;
 }
-.flex-70{
-	flex: 70%;
-}
+
 .flex-60{
 	flex: 60%;
 }
+
+.flex-70{
+	flex: 70%;
+}
+
+.flex-75{
+	flex: 75%;
+}
+
 .flex-80{
     flex: 80%;
 }
+
 .flex-80-1{
 	flex: 0.1%;
 }
+
 .flex-80-49l, .flex-80-49r{
     flex: 49%;
 	position: relative;
 }
+
 .flex-80-32l, .flex-80-32r, .flex-80-32c{
     flex: 32%;
 	position: relative;
 }
+.flex-85{
+    flex: 85%;
+}
+.flex-95{
+    flex: 95%;
+}
+
+
 .flex-100{
 	flex: 100%;
 }
