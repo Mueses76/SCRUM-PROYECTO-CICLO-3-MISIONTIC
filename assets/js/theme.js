@@ -37,6 +37,7 @@
           bsCollapse.hide();
         }
       };
+      
     });
   }
 

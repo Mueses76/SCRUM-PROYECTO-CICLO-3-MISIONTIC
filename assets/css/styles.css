@@ -75,6 +75,15 @@
 	top: 50%;
 	transform: translateY(15%);
 }
+.img-user-style{
+	width: 150px;
+	height: 150px;
+	text-align: center;
+}
+.email-text, .username-text{
+	font-size: 24px;
+	align-content: center;
+}
 @media(max-width:1190px){
 	.flex-80-32l{
 		flex: 99.9%;
@@ -116,5 +125,19 @@
 	}
 	.container-course-form > .row{
 		padding: 0px 5px 0px 5px;
+	}
+}
+@media(max-width:767px){
+	.img-user-style{
+		padding: 10px;
+		width: 80px;
+		height: 80px;
+	}
+	.email-text{
+		font-size: 0;
+	
+	}
+	.username-text{
+		font-size: 15px;
 	}
 }
