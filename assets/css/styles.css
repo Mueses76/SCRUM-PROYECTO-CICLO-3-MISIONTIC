@@ -8,6 +8,19 @@
 	flex-wrap: wrap;
 	padding: 0px 20px 0px 20px;
 }
+.container-course-form{
+	margin: 50px; 
+}
+.container-course-form > .row{
+	padding: 0px 20px 0px 20px;
+}
+.row > .width50{
+	width: 50%;
+}
+.width-50{
+	width: 50%;
+	
+}
 
 .flex-5{
 	flex: 5%;
@@ -45,7 +58,6 @@
     flex: 49%;
 	position: relative;
 }
-
 .flex-80-32l, .flex-80-32r, .flex-80-32c{
     flex: 32%;
 	position: relative;
@@ -56,8 +68,6 @@
 .flex-95{
     flex: 95%;
 }
-
-
 .flex-100{
 	flex: 100%;
 }
@@ -91,4 +101,20 @@
 		flex: 99.9%;	
 	}
 
+}
+@media(max-width:1070px){
+	.row > .width50{
+		width: 100%;
+	}
+}
+@media(max-width:590px){
+	.width-50{
+		width: 100%;
+	}
+	.container-course-form{
+		margin: 25px;
+	}
+	.container-course-form > .row{
+		padding: 0px 5px 0px 5px;
+	}
 }

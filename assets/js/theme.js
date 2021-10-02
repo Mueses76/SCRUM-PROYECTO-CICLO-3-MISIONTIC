@@ -3,7 +3,8 @@
 
   var sidebar = document.querySelector('.sidebar');
   var sidebarToggles = document.querySelectorAll('#sidebarToggle, #sidebarToggleTop');
-  
+  console.log('sidebarToggles');
+  console.log(sidebar.getRootNode);
   if (sidebar) {
     
     var collapseEl = sidebar.querySelector('.collapse');

@@ -9,21 +9,31 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 <body >
+    
     <nav class="navbar navbar-light navbar-expand-md" style="color: var(--bs-blue);font-size: 20px;background: #9371D1;">
-        <div class="container-fluid"><i class="fa fa-search" style="background: 9371D1;border-color: var(--bs-purple);color: var(--bs-gray-900);margin: 0px 10px 0px 0px;"></i><a class="navbar-brand" href="#" style="font-family: Consolas;color: var(--bs-gray-900);background: #9371D1;"><strong>CourseSearch</strong></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid">
+            <i class="fa fa-search" style="background: 9371D1;border-color: var(--bs-purple);color: var(--bs-gray-900);margin: 0px 10px 0px 0px;"></i>
+            <a class="navbar-brand" href="#" style="font-family: Consolas;color: var(--bs-gray-900);background: #9371D1;">
+                <strong>CourseSearch</strong>
+            </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="usuario.html" style="font-family: Consolas;">Mi Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="usuario.html" style="font-family: Consolas;color: rgba(0, 0, 0, 0.9);">Mi Perfil</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html" style="font-family: Consolas;">Buscar Curso</a></li>
                 </ul>
             </div><a role="button" href="loginBase.html" class="btn btn-primary" type="button" style="padding: 7px 12px;margin: 0px 6px;font-family: Consolas;color: var(--bs-body-bg);border-color: var(--bs-blue);background: #6F42C1;">Sign in</a>
             <a role="button" href="registerBase.html" class="btn btn-primary" type="button" style="font-family: Consolas;background: #6F42C1;">Sign up</a>
         </div> 
     </nav>
-    <div id="wrapper">
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+    <div id="wrapper"  style="background: #6F42C1;color: var(--bs-purple);">
+        <div class>
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion  p-0">
             <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
                     <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
                     <div class="sidebar-brand-text mx-3"><span>Brand</span></div>
@@ -39,10 +49,68 @@
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
         </nav>
+        </div>
+        <div class ="container-course-form" id="content-wrapper" style="background: #9371D1">
+            <div class = "row">
+                <div class="width50">
+                    <label class="col-form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Titulo curso</label>
+                    <input class="form-control " type="text" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+
+                </div>
+                <div class="width50">
+                    <label class="col-form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Autor original</label>
+                    <input class="form-control " type="text" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+                </div>
+            </div>
+          
+            
+            <div  class="row">
+                <div class="width50">
+                    <label class="col-form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Plataforma</label>
+                    <input class="form-control " type="text" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+
+                </div>
+                <div  class="row width50" style="align-items: center">
+                    <div class="width-50" style="align-items: center;">
+                        <label class="form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Fecha inicio:&nbsp;</label>
+                        <input type="date">
+
+                    </div> 
+                    <div class="width-50" style="align-items: center;">
+                        <label class="form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Fecha final: &nbsp;</label>
+                        <input type="date">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label class="col-form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Descripción&nbsp;</label>
+                    <input class="form-control " type="text" style="height: 300px; font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="col-form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Enlace</label>
+                    <input class="form-control " type="text" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+                </div>
+            </div>
+           
+            <div >
+                <div style="margin: 20px;">
+                    <button class="btn btn-primary" type="button" style="background: var(--bs-purple); width: 10%; height: 50px;">Editar</button>
+                </div>
+            </div>
+            
+        </div>
     </div>
+    
   
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
 </body>
 
 </html>
