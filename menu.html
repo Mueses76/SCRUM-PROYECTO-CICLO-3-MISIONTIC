@@ -33,12 +33,12 @@
     </nav>
     <div id="wrapper"  style="background: #6F42C1;color: var(--bs-purple);">
         <div class>
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion  p-0" style="background-color: #9371D1;">
+        <nav id = "menu" class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion  p-0" style="background-color: #9371D1;">
             <div class="container-fluid d-flex flex-column p-0">
     
-                <img class="img-user-style" src="assets/img/user.png">
-                <span class="username-text text-light">Username</span>
-                <span class="email-text text-light">Email</span>
+                <img v-bind:class="class_img" src="assets/img/user.png">
+                <span v-bind:class ="class_username_text" >Username</span>
+                <span v-bind:class="class_email_text">Email</span>
                 
                 
                 <hr class="sidebar-divider my-0">
@@ -50,7 +50,9 @@
                     <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fas fa-table"></i><span>Titulo curso 4</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fas fa-table"></i><span>Titulo curso 5</span></a></li>
                 </ul>
-                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+                <div class="text-center d-none d-md-inline">
+                    <button v-on:click="achiquitar" class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
+                </div>
             </div>
         </nav>
         </div>
@@ -107,10 +109,20 @@
         </div>
     </div>
     
-  
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="controlador/menu.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/theme.js"></script>
 
+
+
+
+
+
+
+
+
+    
 </body>
 
 </html>

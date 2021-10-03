@@ -75,6 +75,21 @@
 	top: 50%;
 	transform: translateY(15%);
 }
+.imgSize{
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+
+}
+
+.email-text-size{
+   font-size: 0px;
+   
+   
+}     
+.username-text-size{
+	font-size: 15px;
+ }
 .img-user-style{
 	width: 150px;
 	height: 150px;
@@ -94,6 +109,7 @@
 	}
 
 }
+  
 @media(max-width:785px){
 	.flex-80-32l{
 		flex: 99.9%;
