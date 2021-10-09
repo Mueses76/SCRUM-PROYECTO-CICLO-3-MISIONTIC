@@ -1,11 +1,11 @@
 <template>
-  <body style="background: #6F42C1;">
+  <body style="background-color: #6F42C1;">
 
     <h1 class="display-3 text-center" style="font-family: Consolas;font-size: 51.8px; margin: 50px 0px 0px 0px;">Bienvenido a CourseSearch</h1>
     <p style="text-align: center;font-family: Consolas;margin: 0px 0px 0px 0px;">Plataforma para la búsqueda de contenido educativo gratuito de programación</p>
     <p style="text-align: center;font-family: Consolas;">en internet</p>
     
-    <div id="buscar" v-on:keyup.enter="onEnter">
+    <div  v-on:keyup.enter="onEnter">
         <div class="flex-container">
             <div class="flex-10"></div>
             <div class="flex-80 " style="margin: 30px 0px 10px 0px;">
@@ -71,3 +71,30 @@
 
 </body>
 </template>
+<script>
+export default {
+  name: 'bodyIndex',
+    data() {
+        return{
+            busqueda_principa: '',
+            titulo : '',
+            autor: '',
+            plataforma: '',
+            fecha_inicio: '',
+            fecha_fin: '',
+        }
+    
+    },
+    methods: {
+        onEnter(){
+            console.log('enter');
+        }
+
+    },
+    
+    created: function(){
+        console.log('buscar creado');
+    }
+
+}
+</script>
