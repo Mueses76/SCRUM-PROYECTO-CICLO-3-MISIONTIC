@@ -72,6 +72,8 @@
 </body>
 </template>
 <script>
+import router from '../router'
+
 export default {
   name: 'bodyIndex',
     data() {
@@ -87,9 +89,9 @@ export default {
     },
     methods: {
         onEnter(){
-            console.log('enter');
-        }
+            router.push({ name: "BodyResultadosBusqueda" });
 
+        }
     },
     
     created: function(){

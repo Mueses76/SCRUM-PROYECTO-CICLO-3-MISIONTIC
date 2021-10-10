@@ -1,7 +1,7 @@
 <template>
   <body style="background-color: #6F42C1;">
 
-   <section id="register" class="register-photo" style="color: var(--bs-purple);background: var(--bs-purple);">
+   <section  v-on:keyup.enter="onEnter" id="register" class="register-photo" style="color: var(--bs-purple);background: var(--bs-purple);">
         <div class="form-container" style="width: 300px;">
             <form method="post" style="width: 300px;background: #9371D1;">
                 <h2 class="text-center" style="width: 240px;">Create an account.</h2>
@@ -24,6 +24,7 @@
 </body>
 </template>
 <script>
+import router from '../router'
 export default {
    
     name: 'register',
@@ -39,7 +40,7 @@ export default {
     methods: {
         
         onEnter: function(){
-            window.location.href = 'menu.html';     
+            router.push({ name: "BodyUsuarios" });
         },
        
 

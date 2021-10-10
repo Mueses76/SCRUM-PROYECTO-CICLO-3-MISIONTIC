@@ -11,7 +11,7 @@
                         <router-link class="nav-link " :to="{ name: 'BodyIndex', params: {} }" style="font-family: Consolas;" >Buscar Curso</router-link>
                     </li>
                 </ul>
-            "</div>
+            </div>
             <router-link :to="{ name: 'BodyLogin', params: {} }" role = "button" class="btn btn-primary" type="button" style="padding: 7px 12px;margin: 0px 6px;font-family: Consolas;color: var(--bs-body-bg);border-color: var(--bs-blue);background: #6F42C1;">Sign in</router-link>
             <router-link :to="{ name: 'BodyRegister', params: {} }" role="button" href="registerBase.html" class="btn btn-primary" type="button" style="font-family: Consolas;background: #6F42C1;">Sign up</router-link>
         </div>

@@ -26,5 +26,10 @@ export default new Router({
             name: 'BodyRegister',
             component: () => import('@/components/BodyRegister')
         },
+        {
+            path: '/',
+            name: 'BodyResultadosBusqueda',
+            component: () => import('@/components/BodyResultadosBusqueda')
+        },
     ]
 });

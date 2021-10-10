@@ -22,6 +22,7 @@
 </body>
 </template>
 <script>
+import router from '../router'
 export default {
    
     name: 'login',
@@ -34,8 +35,8 @@ export default {
     },
     methods: {
         
-        onEnter: function(){
-            window.location.href = 'menu.html';     
+        onEnter(){
+            router.push({ name: "BodyUsuarios" });
         }
 
     },

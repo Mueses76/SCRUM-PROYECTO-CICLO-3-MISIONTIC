@@ -30,7 +30,7 @@
             </div>
         </nav>
         </div>
-        <div class ="container-course-form" id="content-wrapper" style="background: #9371D1">
+        <div v-on:keyup.enter="editar_agregar" class ="container-course-form" id="content-wrapper" style="background: #9371D1">
             <div class = "row">
                 <div class="width50">
                     <label class="col-form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Titulo curso</label>
@@ -162,7 +162,8 @@ export default {
         boton_agregar(){
             this.titulo = '';
             this.button.text = "Agregar";
-        }
+        },
+        
     },
     created: function(){
         console.log('usuario creado');
