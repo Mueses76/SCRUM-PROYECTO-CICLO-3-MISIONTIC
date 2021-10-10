@@ -8,7 +8,7 @@ var register = new Vue({
             correo: '',
             username: '',
             contraseña : '', 
-            check_contraseña,
+            check_contraseña: '',
         }
     
     },
