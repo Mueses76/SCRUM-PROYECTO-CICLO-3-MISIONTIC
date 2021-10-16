@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body >
+    
+    <nav class="navbar navbar-light navbar-expand-md" style="color: var(--bs-blue);font-size: 20px;background: #9371D1;">
+        <div class="container-fluid">
+            <i class="fa fa-search" style="background: 9371D1;border-color: var(--bs-purple);color: var(--bs-gray-900);margin: 0px 10px 0px 0px;"></i>
+            <a class="navbar-brand" href="#" style="font-family: Consolas;color: var(--bs-gray-900);background: #9371D1;">
+                <strong>CourseSearch</strong>
+            </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="menu.html" style="font-family: Consolas;color: rgba(0, 0, 0, 0.9);">Mi Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="font-family: Consolas;">Buscar Curso</a></li>
+                </ul>
+            </div><a role="button" href="loginBase.html" class="btn btn-primary" type="button" style="padding: 7px 12px;margin: 0px 6px;font-family: Consolas;color: var(--bs-body-bg);border-color: var(--bs-blue);background: #6F42C1;">Sign in</a>
+            <a role="button" href="registerBase.html" class="btn btn-primary" type="button" style="font-family: Consolas;background: #6F42C1;">Sign up</a>
+        </div> 
+    </nav>
+    <div id="wrapper"  style="background: #6F42C1;color: var(--bs-purple);">
+        <div class>
+        <nav  class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion  p-0" style="background-color: #9371D1;">
+            <div class="container-fluid d-flex flex-column p-0">
+    
+                <img v-bind:class="class_img" src="assets/img/user.png">
+                <span v-bind:class ="class_username_text" >Username</span>
+                <span v-bind:class="class_email_text">Email</span>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li  class="nav-item" v-for= "curso in cursos" v-on:click="seleccion(curso[1])" >
+                        <a class="nav-link"> 
+                            <i class="fas fa-table"></i>
+                            <span>{{curso[0]}}</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <button v-on:click="boton_agregar" class="agregar btn rounded-circle border-0 " type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                    </button>
+                </div>
+                <div class="text-center d-none d-md-inline">
+                    <button v-on:click="achiquitar" class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <div class ="container-course-form" id="content-wrapper" style="background: #9371D1">
+            <div class = "row">
+                <div class="width50">
+                    <label class="col-form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Titulo curso</label>
+                    <input v-model="titulo" class="form-control " type="text" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+
+                </div>
+                <div class="width50">
+                    <label class="col-form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Autor original</label>
+                    <input v-model="autor" class="form-control " type="text" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+                </div>
+            </div>
+            <div  class="row">
+                <div class="width50">
+                    <label class="col-form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Plataforma</label>
+                    <input v-model="plataforma" class="form-control " type="text" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+
+                </div>
+                <div  class="row width50" style="align-items: center">
+                    <div class="width-50" style="align-items: center;">
+                        <label class="form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Fecha inicio:&nbsp;</label>
+                        <input v-model="fecha_inicio" type="date">
+
+                    </div> 
+                    <div class="width-50" style="align-items: center;">
+                        <label class="form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Fecha final: &nbsp;</label>
+                        <input v-model="fecha_fin" type="date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="col-form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Descripción&nbsp;</label>
+                    <input v-model="descripcion" class="form-control " type="text" style="height: 300px; font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="col-form-label" style="color: rgba(0, 0, 0, 0.9);font-family: Consolas;">Enlace</label>
+                    <input v-model="enlace" class="form-control " type="text" style="font-family: Consolas;background: var(--bs-indigo);color: var(--bs-gray-900)">
+                </div>
+            </div>
+           
+            <div >
+                <div style="margin: 20px;">
+                    <button v-on:click="editar_agregar()" class="btn btn-primary" type="button" style="background: var(--bs-purple); width: 100px; height: 50px;">{{button.text}}</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="controlador/menu.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>
